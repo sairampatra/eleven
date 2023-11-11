@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>.container{
+    border: 4px solid rgb(0, 0, 0);
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+grid-gap: 5px;
+justify-items: center;
+padding: 10px;
+}
+
+img{
+    width: 90%;
+
+}
+@media screen and (max-width:800px){
+    .container{
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }}
+    @media screen and (max-width:500px){
+    .container{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+    }
+    </style>
+
+
+<body>
+    <div class="container">
+        
+            <img src="https://fastly.picsum.photos/id/103/200/300.jpg?hmac=QNhmiuWX_v7Br1-vACnDXKchd_VJ1OjbxDKwIM2NpD4" alt="" class="one">
+            <img src="https://fastly.picsum.photos/id/103/200/300.jpg?hmac=QNhmiuWX_v7Br1-vACnDXKchd_VJ1OjbxDKwIM2NpD4" alt="" class="two">
+            <img src="https://fastly.picsum.photos/id/103/200/300.jpg?hmac=QNhmiuWX_v7Br1-vACnDXKchd_VJ1OjbxDKwIM2NpD4" alt="" class="three">
+        
+    </div>
+</body>
+</html>
